@@ -12,10 +12,16 @@
 <body>
     <h1>First page</h1>
     <div id="app">
-        {{word}}
+        {{word}} {{ counter}}
+        <button @click="addOne">Increment</button>
+        <br>
         <a href="second.html">Go to second page</a>
         <br>
         <a href="second.html"><button>Go to second page</button></a>
+    </div>
+
+    <div>
+        The two html pages will NOT share data: They have separate Vue instances
     </div>
 
     <script src="index.js"></script>

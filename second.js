@@ -2,8 +2,7 @@ Vue.createApp({
     data() {
         return {
             word: "page two",
-            words: [],
-            message: null,
+            counter: 0,
         }
     },
     methods: {
